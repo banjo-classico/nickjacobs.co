@@ -1,7 +1,9 @@
 import clone from 'clone'
+import projects from '../data/projects'
 
 const INITIAL_STATE = {
-  displayPage: 'home'
+  displayPage: 'home',
+  projects
 }
 
 export default function reducer (state = INITIAL_STATE, action) {

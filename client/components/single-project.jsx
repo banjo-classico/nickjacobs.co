@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import * as actionCreators from '../redux/action-creators'
 import { connect } from 'react-redux'
-import { Link } from 'react-router'
+import Main from './main.jsx'
+import Sidebar from './sidebar.jsx'
 
 
 class SingleProject extends Component {
@@ -10,15 +11,24 @@ class SingleProject extends Component {
   }
 
   render() {
+    const i = this.props.projects.findIndex((project) => project.id === this.props.params.id)
+    console.log(this.props.params.id)
+    const project = this.props.projects[i]
+    console.log(project)
     return (
-      <div>This is Single project</div>
+      <div className='single-project'>
+        <Main project={ project }/>
+        <Sidebar />
+      </div>
       )
   }
 }
 
 function mapStateToProps(state) {
   return {
-    page: state.displayPage
+    page: state.displayPage,
+    projects: state.projects
+
   }
 }
 

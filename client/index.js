@@ -20,7 +20,7 @@ const router = (
     <Route path='/' component={ App }>
       <IndexRoute component={ HomeContainer } />
       <Route path='/projects' component={ ProjectsContainer } />
-      <Route path='/single' component={ SingleProjectContainer } />
+      <Route path='/single/:id' component={ SingleProjectContainer } />
     </Route>
   </Router>
 )

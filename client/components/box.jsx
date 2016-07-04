@@ -10,11 +10,11 @@ class Box extends Component {
       <div className='box' id={ this.props.id }>
       {
         (this.props.type === 'home')
-        ? <Title text={ this.props.text } />
+        ? <Title text={ this.props.title } />
         : (
           <div>
-            <SmallTitle text={ this.props.text } />
-            <ProjectInfo text={ this.props.info } />
+            <SmallTitle text={ this.props.title } />
+            <p>{this.props.tech}</p>
           </div>
           )
       }

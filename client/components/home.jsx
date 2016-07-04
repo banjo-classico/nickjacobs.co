@@ -15,11 +15,12 @@ class Home extends Component {
     return (
       <div>
         <div id='home'>
-          <Box id='pitch' text='pitch in' type='home'/>
-          <Box id='ww' text="word's worth" type='home'/>
-          <Box id='eda' text='Enspiral Dev Academy' type='home'/>
+          <Link to='single/pitch-in' ><Box id='pitch-in' title='pitch in' type='home'/></Link>
+          <Link to='single/ww' ><Box id='ww' title="word's worth" type='home'/></Link>
+          <Link to='single/eda' ><Box id='eda' title='Enspiral Dev Academy' type='home'/></Link>
+          <Link to='single/njco' ><Box id='njco' title='nickjacobs.co' type='home'/></Link>
+          <Icons />
         </div>
-        <Icons />
       </div>
       )
   }
