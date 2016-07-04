@@ -39,8 +39,12 @@
     "watchify": "^3.7.0"
   },
   "dependencies": {
+    "clone": "^1.0.2",
     "express": "^4.14.0",
     "react": "^15.1.0",
-    "react-dom": "^15.1.0"
+    "react-dom": "^15.1.0",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.5.2",
+    "redux": "^3.5.2"
   }
 }

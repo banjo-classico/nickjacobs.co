@@ -1,0 +1,75 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+#home, #projects, #icons {
+  display: flex;
+}
+
+#icons {
+  background-color: lightgreen;
+  justify-content: space-around;
+}
+
+#icons a{
+  color: #fff;
+  font-size: 2rem;
+}
+
+i {
+  text-shadow: 3px 3px 3px darkgrey;
+}
+
+
+.box {
+  width: 33%;
+  padding: 20px;
+  border: 2px solid black;
+  margin: 10px;
+  text-align: center;
+}
+
+#pitch {
+  color: tomato;
+}
+
+#ww {
+  color: lightblue;
+}
+
+#eda {
+  color: gold;
+}
+
+#njco {
+  color: grey;
+}
+
+nav {
+  height: 50px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: hotpink;
+}
+
+footer {
+  text-align: center;
+}
