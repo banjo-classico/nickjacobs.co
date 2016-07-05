@@ -1,5 +1,8 @@
 body {
   font-family: sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1439761414027-4f4ebeeda3a3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=969f23b9f65b9b0c1779858502a20df2');
+  background-size: unset;
+
 }
 
 a {
@@ -13,19 +16,28 @@ h1 {
 #home, #projects, #icons {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+#home {
+  padding: 0 10%;
 }
 
 
 #icons {
-  background-color: lightgreen;
   justify-content: space-around;
 }
 
 #home a {
   padding: 20px;
-  border: 2px solid black;
   margin: 10px;
+  background-color: #fff;
   text-align: center;
+}
+
+
+#icons a:hover {
+  background-color: #dcdcdc;
 }
 
 #icons a{
@@ -60,8 +72,8 @@ h1 {
 }
 
 nav {
-  height: 50px;
-  border: 2px solid black;
+  height: 80px;
+  background-color: rgba(0, 0, 0, .3);
   display: flex;
   justify-content: flex-end;
 }

@@ -8,11 +8,13 @@ class Icons extends Component {
   render() {
     return (
       <div id='icons'>
+        <ul>
         {
           icons.map((item) => {
             return <Icon type={item.type} link={item.link} />
           })
         }
+        </ul>
       </div>
       )
   }

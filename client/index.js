@@ -1,5 +1,5 @@
 import React from 'react'
-import { Router, Route, IndexRoute, hashHistory } from 'react-router'
+import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import configureStore from './redux/configure-store'
@@ -16,7 +16,7 @@ store.subscribe(() => {
 })
 
 const router = (
-  <Router history={ hashHistory }>
+  <Router history={ browserHistory }>
     <Route path='/' component={ App }>
       <IndexRoute component={ HomeContainer } />
       <Route path='/projects' component={ ProjectsContainer } />

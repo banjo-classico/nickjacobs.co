@@ -11,7 +11,7 @@ class App extends Component {
       <div>
         <NavbarContainer />
         { this.props.children }
-        <footer>Copyright Nick Jacobs 2016</footer>
+        <footer>Copyright 2016 - Nick Jacobs</footer>
       </div>
     )
   }

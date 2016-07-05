@@ -7,7 +7,7 @@ class Box extends Component {
 
   render() {
     return (
-      <div className='box' id={ this.props.id }>
+      <div className='box' id={ this.props.id } className={ this.props.columns }>
       {
         (this.props.type === 'home')
         ? <Title text={ this.props.title } />

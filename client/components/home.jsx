@@ -18,7 +18,7 @@ class Home extends Component {
           <Link to='single/pitch-in' ><Box id='pitch-in' title='pitch in' type='home'/></Link>
           <Link to='single/ww' ><Box id='ww' title="word's worth" type='home'/></Link>
           <Link to='single/eda' ><Box id='eda' title='Enspiral Dev Academy' type='home'/></Link>
-          <Link to='single/njco' ><Box id='njco' title='nickjacobs.co' type='home'/></Link>
+          <Link to='single/njco' ><Box id='njco' title='njco' type='home'/></Link>
           <Icons />
         </div>
       </div>
