@@ -21,7 +21,7 @@ class Portfolio extends Component {
         {
           this.props.projects.map((project) => {
             return <button className='singlebox' id={project.id} onClick={ this.handleClick.bind(this) }>
-                    <h4>{ project.title }</h4>
+                    <h2>{ project.title }</h2>
                     <p>{ project.tech }</p>
                    </button>
           })

@@ -31,6 +31,19 @@ h1 {
   padding: 5% 15%;
 }
 
+.single-project {
+  width: 80%;
+  height: 70vh;
+  padding: 5%;
+  text-align: left;
+  background: gold;
+}
+
+.single-project .close {
+  font-size: 3rem;
+  float: right;
+}
+
 #pitch-in {
   color: tomato;
 }
@@ -51,6 +64,7 @@ h1 {
   width: 20vh;
   height: 20vh;
   background: transparent;
+  border: 1px solid black;
 }
 
 nav {

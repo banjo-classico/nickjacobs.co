@@ -19,8 +19,17 @@ class Single extends Component {
     console.log(project)
     return (
       <div className='single-project'>
+          <h2>{ project.title }</h2>
+          {
+            project.info.map((e) => {
+              return (<div>
+                        <h4>{e.heading}</h4>
+                        <p>{e.text}</p>
+                      </div>)
+            })
+          }
+          <p>{ project.tech }</p>
         <div className='close' onClick={ this.handleClick.bind(this) }>X</div>
-        { this.props.id }
       </div>
       )
   }
