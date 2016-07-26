@@ -6,8 +6,6 @@ import configureStore from './redux/configure-store'
 
 import App from './app.jsx'
 import { HomeContainer } from './components/home.jsx'
-import { ProjectsContainer } from './components/projects-page.jsx'
-import { SingleProjectContainer } from './components/single-project.jsx'
 
 const store = configureStore()
 
@@ -19,8 +17,6 @@ const router = (
   <Router history={ browserHistory }>
     <Route path='/' component={ App }>
       <IndexRoute component={ HomeContainer } />
-      <Route path='/projects' component={ ProjectsContainer } />
-      <Route path='/single/:id' component={ SingleProjectContainer } />
     </Route>
   </Router>
 )

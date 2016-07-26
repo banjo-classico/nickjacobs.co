@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
 import * as actionCreators from '../redux/action-creators'
 import { connect } from 'react-redux'
-import Main from './main.jsx'
-import Sidebar from './sidebar.jsx'
 
 
-class SingleProject extends Component {
+class Single extends Component {
   constructor(props) {
     super(props)
   }
@@ -17,22 +15,10 @@ class SingleProject extends Component {
     console.log(project)
     return (
       <div className='single-project'>
-        <Main project={ project }/>
-        <Sidebar />
+        Single
       </div>
       )
   }
 }
 
-function mapStateToProps(state) {
-  return {
-    page: state.displayPage,
-    projects: state.projects
-
-  }
-}
-
-export const SingleProjectContainer = connect(
-  mapStateToProps,
-  actionCreators
-  )(SingleProject)
+export default Single

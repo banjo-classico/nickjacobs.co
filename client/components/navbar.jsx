@@ -22,12 +22,4 @@ class Navbar extends Component {
       )
   }
 }
-
-function mapStateToProps(state) {
-  return {}
-}
-
-export const NavbarContainer = connect(
-  mapStateToProps,
-  actionCreators
-  )(Navbar)
+ export default Navbar

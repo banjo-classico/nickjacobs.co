@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { NavbarContainer } from './components/navbar.jsx'
+import Nav from './components/navbar.jsx'
 
 class App extends Component {
   constructor(props) {
@@ -9,9 +9,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <NavbarContainer />
+        <Nav />
         { this.props.children }
-        <footer>Copyright 2016 - Nick Jacobs</footer>
       </div>
     )
   }

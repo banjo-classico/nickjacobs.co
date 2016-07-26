@@ -1,6 +1,6 @@
-export function setDisplayPage(page) {
+export function showProject(id) {
   return {
-    type: SET_DISPLAY_PAGE,
-    page
+    type: 'SHOW_PROJECT',
+    id
   }
 }
