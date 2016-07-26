@@ -17,6 +17,10 @@ export default function reducer (state = INITIAL_STATE, action) {
       newState.singleProject.show = true
       newState.singleProject.id = action.id
       break
+
+    case 'CLOSE_PROJECT' :
+      newState.singleProject.show = false
+      newState.singleProject.id = ''
   }
 
   return newState

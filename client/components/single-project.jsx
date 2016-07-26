@@ -8,14 +8,19 @@ class Single extends Component {
     super(props)
   }
 
+  handleClick() {
+    this.props.closeProject()
+  }
+
   render() {
-    const i = this.props.projects.findIndex((project) => project.id === this.props.params.id)
-    console.log(this.props.params.id)
+    const i = this.props.projects.findIndex((project) => project.id === this.props.id)
+    console.log(this.props.id)
     const project = this.props.projects[i]
     console.log(project)
     return (
       <div className='single-project'>
-        Single
+        <div className='close' onClick={ this.handleClick.bind(this) }>X</div>
+        { this.props.id }
       </div>
       )
   }

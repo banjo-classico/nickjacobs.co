@@ -11,9 +11,9 @@ class Jumbo extends Component {
 
   render() {
     return (
-      <div id='jumbo' className='section'>
+      <section id='jumbo'>
         <h1>Jumbo</h1>
-      </div>
+      </section>
       )
   }
 }

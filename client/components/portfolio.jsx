@@ -9,15 +9,24 @@ class Portfolio extends Component {
     super(props)
   }
 
+  handleClick(e) {
+    this.props.showProject(e.target.id)
+  }
+
   render() {
     return (
       <div id='portfolio' className='section'>
         <h1>Portfolio</h1>
+        <div className='flexbox'>
         {
           this.props.projects.map((project) => {
-            return <Link to={'/single/' + project.id} ><div id={project.id} title={project.title} tech={project.tech} ></div></Link>
+            return <button className='singlebox' id={project.id} onClick={ this.handleClick.bind(this) }>
+                    <h4>{ project.title }</h4>
+                    <p>{ project.tech }</p>
+                   </button>
           })
         }
+        </div>
       </div>
       )
   }

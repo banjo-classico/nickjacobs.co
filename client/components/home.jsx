@@ -24,7 +24,9 @@ class Home extends Component {
           <div id='divider'>Divider</div>
           {
             (this.props.singleProject.show)
-            ? <Single id={ this.props.singleProject.id } projects={ this.props.projects }/>
+            ? <Single id={ this.props.singleProject.id } 
+                      projects={ this.props.projects }
+                      closeProject={ this.props.closeProject }/>
             : null
           }
           <Portfolio projects={ this.props.projects } showProject={ this.props.showProject }/>

@@ -1,58 +1,34 @@
 body {
   font-family: sans-serif;
-  background-image: url('https://images.unsplash.com/photo-1439761414027-4f4ebeeda3a3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=969f23b9f65b9b0c1779858502a20df2');
-  background-size: unset;
-
+  text-align: center;
 }
 
 a {
   text-decoration: none;
 }
 
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
 h1 {
   font-size: 4rem;
 }
 
-#home, #projects, #icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.home {
+  padding: 0 0;
 }
 
-#home {
-  padding: 0 10%;
+#jumbo {
+  width: 100%;
+  height: 80vh;
+  background-image: url('https://images.unsplash.com/photo-1439761414027-4f4ebeeda3a3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=969f23b9f65b9b0c1779858502a20df2');
+  background-size: cover;
 }
 
-
-#icons {
-  justify-content: space-around;
-}
-
-#home a {
-  padding: 20px;
-  margin: 10px;
-  background-color: #fff;
-  text-align: center;
-}
-
-
-#icons a:hover {
-  background-color: #dcdcdc;
-}
-
-#icons a{
-  color: #fff;
-  font-size: 2rem;
-  text-shadow: 3px 3px 3px #333;
-  border: none;
-}
-
-#projects a {
-  width: 45%;
-  padding: 10px;
-  border: 2px solid black;
-  margin: 10px;
-  text-align: center;
+#portfolio {
+  padding: 5% 15%;
 }
 
 #pitch-in {
@@ -69,6 +45,12 @@ h1 {
 
 #njco {
   color: grey;
+}
+
+.singlebox {
+  width: 20vh;
+  height: 20vh;
+  background: transparent;
 }
 
 nav {

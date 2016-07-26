@@ -4,3 +4,9 @@ export function showProject(id) {
     id
   }
 }
+
+export function closeProject() {
+  return {
+    type: 'CLOSE_PROJECT'
+  }
+}
