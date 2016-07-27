@@ -1,16 +1,9 @@
 import React, { Component } from 'react'
-import * as actionCreators from '../redux/action-creators'
-import { connect } from 'react-redux'
-import { Link } from 'react-router'
-
+import Singlebox from './singlebox.jsx'
 
 class Portfolio extends Component {
   constructor(props) {
     super(props)
-  }
-
-  handleClick(e) {
-    this.props.showProject(e.target.id)
   }
 
   render() {
@@ -20,10 +13,9 @@ class Portfolio extends Component {
         <div className='flexbox'>
         {
           this.props.projects.map((project) => {
-            return <button className='singlebox' id={project.id} onClick={ this.handleClick.bind(this) }>
-                    <h2>{ project.title }</h2>
-                    <p>{ project.tech }</p>
-                   </button>
+            return <Singlebox id={ project.id } 
+                              project={ project } 
+                              showProject={ this.props.showProject } />
           })
         }
         </div>

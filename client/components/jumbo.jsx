@@ -1,7 +1,4 @@
 import React, { Component } from 'react'
-import * as actionCreators from '../redux/action-creators'
-import { connect } from 'react-redux'
-import { Link } from 'react-router'
 
 
 class Jumbo extends Component {
@@ -12,7 +9,7 @@ class Jumbo extends Component {
   render() {
     return (
       <section id='jumbo'>
-        <h1>Jumbo</h1>
+        <h1></h1>
       </section>
       )
   }

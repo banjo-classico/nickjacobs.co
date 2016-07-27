@@ -21,7 +21,7 @@ class Home extends Component {
         <div className='home'>
           <Jumbo />
           <About />
-          <div id='divider'>Divider</div>
+          <div className='divider'></div>
           {
             (this.props.singleProject.show)
             ? <Single id={ this.props.singleProject.id } 
@@ -30,6 +30,9 @@ class Home extends Component {
             : null
           }
           <Portfolio projects={ this.props.projects } showProject={ this.props.showProject }/>
+          <div className='divider'></div>
+          <Contact />
+          <div className='divider'></div>
         </div>
       </div>
       )

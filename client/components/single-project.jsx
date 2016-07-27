@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import * as actionCreators from '../redux/action-creators'
-import { connect } from 'react-redux'
-
+import { smoothScr } from '../scroll'
 
 class Single extends Component {
   constructor(props) {
@@ -10,6 +8,7 @@ class Single extends Component {
 
   handleClick() {
     this.props.closeProject()
+    smoothScr.anim('portfolio')
   }
 
   render() {
@@ -18,7 +17,8 @@ class Single extends Component {
     const project = this.props.projects[i]
     console.log(project)
     return (
-      <div className='single-project'>
+      <div className='single-project' id='single'>
+        <div className='close' onClick={ this.handleClick.bind(this) }>X</div>
           <h2>{ project.title }</h2>
           {
             project.info.map((e) => {
@@ -29,7 +29,6 @@ class Single extends Component {
             })
           }
           <p>{ project.tech }</p>
-        <div className='close' onClick={ this.handleClick.bind(this) }>X</div>
       </div>
       )
   }

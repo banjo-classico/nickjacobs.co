@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import * as actionCreators from '../redux/action-creators'
-import { connect } from 'react-redux'
-import { Link } from 'react-router'
+import { smoothScr } from '../scroll'
 
 
 class Navbar extends Component {
@@ -9,14 +7,17 @@ class Navbar extends Component {
     super(props)
   }
 
+  handleClick(e) {
+    smoothScr.anim(e.target.textContent)
+  }
+
   render() {
     return (
       <nav>
         <ul>
-          <Link to='/'><li>home</li></Link>
-          <Link to='/projects'><li>projects</li></Link>
-          <Link to='#'><li>about</li></Link>
-          <Link to='#'><li>contact</li></Link>
+          <li onClick={ this.handleClick.bind(this) }>about</li>
+          <li onClick={ this.handleClick.bind(this) }>portfolio</li>
+          <li onClick={ this.handleClick.bind(this) }>contact</li>
         </ul>
       </nav>
       )
