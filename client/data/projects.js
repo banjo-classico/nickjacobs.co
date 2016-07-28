@@ -3,7 +3,7 @@ const projects = [
     id: 'pitch-in',
     title: 'pitch in',
     tech: 'React, Redux, Express, Sass, PostGres',
-    github: 'https://github.com/AuxiliumRoa/pitch-in'
+    github: 'https://github.com/AuxiliumRoa/pitch-in',
     info: [
       {heading: "Summary",
        text: 'Pitch In was made as a final project during the last week of my training at Enspiral Dev Academy. I was in a team of five and assumed the product owner role and Front End Technical Lead. The concept of the app is that there is a disconnect between people wanting to volunteer their services and the volunteer opportunities that are out there. Pitch In was designed to simplify that connection and therefore improve volunteer engagement with micro-volunteer opportunites.'},
@@ -18,7 +18,7 @@ const projects = [
     id: 'ww',
     title: "word's worth",
     tech: "React, socket.io, Sass, jQuery",
-    github: 'https://github.com/nick-jacobs/react-words-worth'
+    github: 'https://github.com/nick-jacobs/react-words-worth',
     info: [
       {heading: "Summary",
        text: 'This is a project I started at EDA. It is a game to encourage thinking about words and semantics, using a semantic similiarity comparison API.'},
@@ -43,7 +43,7 @@ const projects = [
     id: 'njco',
     title: 'nickjacobs.co',
     tech: 'React, Redux, Sass, Express',
-    github: 'https://github.com/nick-jacobs/nickjacobs.co'
+    github: 'https://github.com/nick-jacobs/nickjacobs.co',
     info: [
       {heading: "Summary",
        text: 'This is a personal website to showcase my portfolio and other projects that I may be working on. It has been fun to continue to develop my use of React, and of course to design and style it!'},

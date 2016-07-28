@@ -1,3 +1,23 @@
+html, body, div, span, applet, object, iframe, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -8,6 +28,7 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .flexbox {
@@ -20,15 +41,21 @@ h1 {
   font-size: 2rem;
 }
 
+.container {
+  position: relative;
+}
+
 nav {
-  margin: 0 0;
+  margin: 0;
   position: fixed;
   top: 0;
+  z-index: 1000;
   width: 100vw;
   height: 50px;
   background-color: rgba(255, 255, 255, .3);
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 nav ul {
@@ -43,21 +70,46 @@ nav li {
 
 #jumbo {
   width: 100vw;
-  height: 100vh;
+  height: 150vh;
+  position: relative;
   background-image: url('https://images.unsplash.com/photo-1439761414027-4f4ebeeda3a3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=969f23b9f65b9b0c1779858502a20df2');
   background-size: cover;
+  text-align: left;
+  color: white;
+}
+
+#greeting {
+  padding: 20% 10%;
 }
 
 .divider {
   height: 40vh;
 }
+.bottom {
+  height: 15vh;
+}
 
 #portfolio, #about, #contact {
   padding: 5% 15%;
+  position: relative;
+}
+
+#about {
+  display: flex;
+  justify-content: space-around;
 }
 
 #contact {
   height: 70vh;
+  padding: 10%;
+}
+
+#contact .iconbox {
+  padding: 10%;
+}
+
+.section-container {
+  padding: 5%;
 }
 
 .single-project {
@@ -66,7 +118,7 @@ nav li {
   padding: 5%;
   margin: auto;
   text-align: left;
-  background: gold;
+  background: #B2A506;
 }
 
 .single-project .close {
@@ -75,12 +127,43 @@ nav li {
 }
 
 .singlebox {
-  margin: 10px 0px;
+  margin: 4% 0;
   width: 20vw;
   height: 20vh;
-  color: tomato;
-  background: transparent;
-  border: 1px solid black;
+  color: white;
+  font-size: 1rem;
+  border: none;
+}
+
+#pitch-in {
+  background: #B20F40;
+}
+
+#ww {
+  background: #CC0742;
+}
+
+#eda {
+  background: #FFEF22;
+}
+
+#njco {
+  background: #7AE1FF;
+}
+
+#contact i {
+  padding: 5%;
+  font-size: 2.5rem;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+.fa-linkedin {
+  color: #0077b5;
+}
+.fa-envelope {
+  color: #d50f25;
 }
 
 

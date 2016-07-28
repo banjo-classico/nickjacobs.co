@@ -17,18 +17,31 @@ class Single extends Component {
     const project = this.props.projects[i]
     console.log(project)
     return (
-      <div className='single-project' id='single'>
-        <div className='close' onClick={ this.handleClick.bind(this) }>X</div>
-          <h2>{ project.title }</h2>
+      <div className='section-container' id='single'>
+        <div className='single-project'>
+          <div className='close' onClick={ this.handleClick.bind(this) }>X</div>
+          <div className='project-heading'>
+            <h2>{ project.title }</h2>
+            <button><a href={ project.github }>GITHUB</a></button>
+          </div>
           {
             project.info.map((e) => {
-              return (<div>
+              return (<div className='project-content'>
                         <h4>{e.heading}</h4>
                         <p>{e.text}</p>
                       </div>)
             })
           }
-          <p>{ project.tech }</p>
+          <div className='build'>
+            <h2>Built with:</h2>
+            {
+              project.build.map((image) => {
+                let path = '/images/' + image + '.png'
+                return <img src={ path }/>
+              })
+            }
+          </div>
+        </div>
       </div>
       )
   }

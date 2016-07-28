@@ -9,7 +9,10 @@ class Jumbo extends Component {
   render() {
     return (
       <section id='jumbo'>
-        <h1></h1>
+        <div id='greeting'>
+          <h1>Hi! I'm Nick.</h1>
+          <h2>I'm a web developer.</h2>
+        </div>
       </section>
       )
   }

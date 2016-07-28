@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { intro, past, present } from '../data/about'
 
 
 class About extends Component {
@@ -9,7 +10,14 @@ class About extends Component {
   render() {
     return (
       <div id='about' className='section'>
-        <h1>About</h1>
+        <div className='section-container'>
+          <img src='/images/1.jpg'/>
+          <div>
+            <p>{ intro }</p>
+            <p>{ past }</p>
+            <p>{ present }</p>
+          </div>
+        </div>
       </div>
       )
   }

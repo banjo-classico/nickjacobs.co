@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import * as actionCreators from '../redux/action-creators'
 import { connect } from 'react-redux'
-import { Link } from 'react-router'
+import Nav from './navbar.jsx'
 import About from './about.jsx'
 import Jumbo from './jumbo.jsx'
 import Portfolio from './portfolio.jsx'
@@ -18,8 +18,10 @@ class Home extends Component {
   render() {
     return (
       <div className='container'>
+        <Nav />
         <div className='home'>
           <Jumbo />
+          <div className='divider'></div>
           <About />
           <div className='divider'></div>
           {
@@ -32,7 +34,8 @@ class Home extends Component {
           <Portfolio projects={ this.props.projects } showProject={ this.props.showProject }/>
           <div className='divider'></div>
           <Contact />
-          <div className='divider'></div>
+          <footer>Copyright 2016 - Nick Jacobs</footer>
+          <div className='bottom'></div>
         </div>
       </div>
       )
