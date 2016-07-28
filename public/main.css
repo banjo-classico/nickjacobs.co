@@ -83,7 +83,7 @@ nav li {
 }
 
 .divider {
-  height: 40vh;
+  height: 30vh;
 }
 .bottom {
   height: 15vh;
@@ -97,6 +97,10 @@ nav li {
 #about {
   display: flex;
   justify-content: space-around;
+}
+
+#about img {
+  width: 150px;
 }
 
 #contact {
@@ -114,16 +118,28 @@ nav li {
 
 .single-project {
   width: 80%;
-  height: 70vh;
-  padding: 5%;
+  padding: 3%;
   margin: auto;
   text-align: left;
-  background: #B2A506;
+  background: #dcdcdc;
+}
+
+.single-project img {
+  width: 6vw;
 }
 
 .single-project .close {
   font-size: 3rem;
   float: right;
+}
+
+.project-heading {
+  width: 100%;
+  border-bottom: 1px solid #999;
+}
+.project-heading button {
+  margin-bottom: 2%;
+  margin-left: 4%;
 }
 
 .singlebox {

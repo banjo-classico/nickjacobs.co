@@ -24,22 +24,26 @@ class Single extends Component {
             <h2>{ project.title }</h2>
             <button><a href={ project.github }>GITHUB</a></button>
           </div>
-          {
-            project.info.map((e) => {
-              return (<div className='project-content'>
-                        <h4>{e.heading}</h4>
-                        <p>{e.text}</p>
-                      </div>)
-            })
-          }
-          <div className='build'>
-            <h2>Built with:</h2>
+          <div>
+            <div className='project-content'>
             {
-              project.build.map((image) => {
-                let path = '/images/' + image + '.png'
-                return <img src={ path }/>
+              project.info.map((e) => {
+                return (<div>
+                          <h4>{e.heading}</h4>
+                          <p>{e.text}</p>
+                        </div>)
               })
             }
+            </div>
+            <div className='build'>
+              <h2>Built with:</h2>
+              {
+                project.build.map((image) => {
+                  let path = '/images/' + image + '.png'
+                  return <img src={ path }/>
+                })
+              }
+            </div>
           </div>
         </div>
       </div>
