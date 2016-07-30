@@ -148,7 +148,14 @@ nav li {
 }
 
 .single-project img {
-  width: 6vw;
+  width: 10vw;
+  padding: 2%;
+}
+#node, #webpack, #socket {
+  width: 5vw;
+}
+#sass {
+  width: 8vw;
 }
 
 .single-project .close {
@@ -163,6 +170,19 @@ nav li {
 .project-heading button {
   margin-bottom: 2%;
   margin-left: 4%;
+}
+
+.project-content-container {
+  display: flex;
+  justify-content: space-between;
+}
+.project-content {
+  width: 75vw;
+  padding-right: 10%;
+}
+.build {
+  width: 25vw;
+  display: block;
 }
 
 .singlebox {

@@ -12,7 +12,7 @@ const projects = [
       {heading: "Technologies",
        text: 'This project used Express  run our server and Knex make our SQL calls to our PostgreSQL database. Our front end was made with React and React-router, with Redux to control our state. Sockets were used to conenct the front end with the server and database. Styling was done using React Bootstrap and Sass, and it was all tied together with Browserify. We aimed to follow a TDD approach and we used Mocha, Chai and Enzyme for unit testing, and Nightwatch for integration tests.'}
     ],
-    build: ['react', 'redux', 'node', 'sass', 'babel', 'react-router', 'socket']
+    build: ['react', 'redux', 'node', 'socket', 'sass', 'babel', 'react-router']
   },
   {
     id: 'ww',
@@ -27,7 +27,7 @@ const projects = [
       {heading: "Technologies",
        text: 'This was originally built with jQuery to manipulate the front end, but then rebuilt using React and Redux, which made for a much cleaner and easier construction. Sockets were again used between server and clients.'}
     ],
-    build: ['react', 'redux', 'node', 'sass', 'babel', 'socket']
+    build: ['react', 'redux', 'node', 'socket', 'sass', 'babel']
   },
   {
     id: 'eda',
@@ -37,7 +37,7 @@ const projects = [
       {heading: "Summary",
        text: 'Enspiral Dev Academy runs an intensive bootcamp for web development training in a Node.js environment. I had an amazing time at EDA and learned more than I could possibly have hoped for. I worked harder than I\'ve ever done before but have come out of it with the capability to be a competent JavaScript developer who can build React apps, set up Express servers and work with SQL and NoSQL databases. There\'s always more to learn, and EDA has helped nurture that love of learning code within me.'}
     ],
-    build: ['react', 'redux', 'node', 'sass', 'babel', 'react-router', 'webpack', 'socket', 'css', 'html']
+    build: ['react', 'redux', 'node', 'webpack', 'sass', 'babel', 'html-css']
   },
   {
     id: 'njco',
@@ -50,7 +50,7 @@ const projects = [
       {heading: "Further Development",
        text: 'Currently all data is kept in files on the client, which is not optimal. In the future I would like to store that data in a database, potentially looking at Firebase. I would also like to add more animation to the interactivity of the site to improve the UX.'}
     ],
-    build: ['react', 'redux', 'node', 'sass', 'babel']
+    build: ['react', 'redux', 'sass', 'babel', 'node']
   }
 ]
 

@@ -24,7 +24,7 @@ class Single extends Component {
             <h2>{ project.title }</h2>
             <button><a href={ project.github }>GITHUB</a></button>
           </div>
-          <div>
+          <div className='project-content-container'>
             <div className='project-content'>
             {
               project.info.map((e) => {
@@ -40,7 +40,7 @@ class Single extends Component {
               {
                 project.build.map((image) => {
                   let path = '/images/' + image + '.png'
-                  return <img src={ path }/>
+                  return <img id={image} src={path}/>
                 })
               }
             </div>
