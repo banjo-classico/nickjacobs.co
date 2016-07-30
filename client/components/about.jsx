@@ -11,8 +11,8 @@ class About extends Component {
     return (
       <div id='about' className='section'>
         <div className='section-container'>
-          <img src='/images/1.jpg'/>
-          <div>
+          <h1>About me</h1>
+          <div className='flexbox'>
             <p>{ intro }</p>
             <p>{ past }</p>
             <p>{ present }</p>

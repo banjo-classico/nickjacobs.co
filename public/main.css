@@ -37,8 +37,10 @@ a {
   flex-wrap: wrap;
 }
 
+
 h1 {
   font-size: 2rem;
+  margin-bottom: 3rem;
 }
 
 .container {
@@ -70,23 +72,38 @@ nav li {
 
 #jumbo {
   width: 100vw;
-  height: 150vh;
+  height: 100vh;
   position: relative;
-  background-image: url('https://images.unsplash.com/photo-1439761414027-4f4ebeeda3a3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=969f23b9f65b9b0c1779858502a20df2');
+  background-image: url('/images/jumbo.jpeg');
   background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: bottom;
   text-align: left;
   color: white;
 }
 
 #greeting {
-  padding: 20% 10%;
+  padding: 30vh 10vw;
 }
 
-.divider {
-  height: 30vh;
+.pineapple-divider, .face-divider {
+  height: 33vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
+
+.pineapple-divider {
+  background-image: url('https://hd.unsplash.com/photo-1451479456262-b94f205059be');
+}
+
+.face-divider {
+  background-image: url('/images/nick-about.jpg');
+}
+
 .bottom {
-  height: 15vh;
+  height: 10vh;
 }
 
 #portfolio, #about, #contact {
@@ -94,18 +111,24 @@ nav li {
   position: relative;
 }
 
-#about {
-  display: flex;
-  justify-content: space-around;
+#about p {
+  width: 200px;
+  text-align: left;
 }
 
 #about img {
-  width: 150px;
+  width: 25vw;
 }
 
+#portfolio {
+  min-height: 100vh;
+}
+
+
 #contact {
-  height: 70vh;
+  height: 60vh;
   padding: 10%;
+  border-bottom: 1px solid hotpink;
 }
 
 #contact .iconbox {
@@ -144,7 +167,7 @@ nav li {
 
 .singlebox {
   margin: 4% 0;
-  width: 20vw;
+  width: 260px;
   height: 20vh;
   color: white;
   font-size: 1rem;
@@ -184,5 +207,6 @@ nav li {
 
 
 footer {
+  margin-top: 3%;
   text-align: center;
 }

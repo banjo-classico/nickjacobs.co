@@ -23,7 +23,7 @@ class Home extends Component {
           <Jumbo />
           <div className='divider'></div>
           <About />
-          <div className='divider'></div>
+          <div className='pineapple-divider'></div>
           {
             (this.props.singleProject.show)
             ? <Single id={ this.props.singleProject.id } 
@@ -32,7 +32,7 @@ class Home extends Component {
             : null
           }
           <Portfolio projects={ this.props.projects } showProject={ this.props.showProject }/>
-          <div className='divider'></div>
+          <div className='face-divider'></div>
           <Contact />
           <footer>Copyright 2016 - Nick Jacobs</footer>
           <div className='bottom'></div>
