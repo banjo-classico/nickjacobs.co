@@ -7,9 +7,9 @@
     "watch": "watchify client/index.js -o public/bundle.js -dv",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-client": "browserify client/index.js -o public/bundle.js",
-    "build-server": "babel index.js -d lib && babel server.js -d lib",
+    "build-server": "babel src -d lib",
     "build": "npm run build-client; npm run build-server",
-    "start-dev": "babel-node index.js",
+    "start-dev": "babel-node src/index.js",
     "start": "node lib/index.js"
   },
   "browserify": {
