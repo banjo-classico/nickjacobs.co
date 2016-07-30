@@ -29,7 +29,7 @@ class Single extends Component {
             {
               project.info.map((e) => {
                 return (<div>
-                          <h4>{e.heading}</h4>
+                          <h3>{e.heading}</h3>
                           <p>{e.text}</p>
                         </div>)
               })
