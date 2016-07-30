@@ -113,7 +113,8 @@ nav li {
 
 #about p {
   width: 200px;
-  text-align: left;
+  padding-top: 10px;
+  text-align: left; 
 }
 
 #about img {

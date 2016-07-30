@@ -13,9 +13,9 @@ class About extends Component {
         <div className='section-container'>
           <h1>About me</h1>
           <div className='flexbox'>
-            <p>{ intro }</p>
-            <p>{ past }</p>
-            <p>{ present }</p>
+            <p style={{'border-top': '10px solid #CC0742'}}>{ intro }</p>
+            <p style={{'border-top': '10px solid #FFEF22'}}>{ past }</p>
+            <p style={{'border-top': '10px solid #7AE1FF'}}>{ present }</p>
           </div>
         </div>
       </div>
