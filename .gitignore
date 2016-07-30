@@ -39,3 +39,6 @@ jspm_packages
 # Bundles
 
 public/bundle.js
+
+.DS_Store
+client/.DS_Store

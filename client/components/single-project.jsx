@@ -1,38 +1,54 @@
 import React, { Component } from 'react'
-import * as actionCreators from '../redux/action-creators'
-import { connect } from 'react-redux'
-import Main from './main.jsx'
-import Sidebar from './sidebar.jsx'
+import { smoothScr } from '../scroll'
 
-
-class SingleProject extends Component {
+class Single extends Component {
   constructor(props) {
     super(props)
   }
 
+  handleClick() {
+    this.props.closeProject()
+    smoothScr.anim('portfolio')
+  }
+
   render() {
-    const i = this.props.projects.findIndex((project) => project.id === this.props.params.id)
-    console.log(this.props.params.id)
+    const i = this.props.projects.findIndex((project) => project.id === this.props.id)
+    console.log(this.props.id)
     const project = this.props.projects[i]
     console.log(project)
     return (
-      <div className='single-project'>
-        <Main project={ project }/>
-        <Sidebar />
+      <div className='section-container' id='single'>
+        <div className='single-project'>
+          <div className='close' onClick={ this.handleClick.bind(this) }>X</div>
+          <div className='project-heading'>
+            <h2>{ project.title }</h2>
+            <button><a href={ project.github }>GITHUB</a></button>
+          </div>
+          <div>
+            <div className='project-content'>
+            {
+              project.info.map((e) => {
+                return (<div>
+                          <h4>{e.heading}</h4>
+                          <p>{e.text}</p>
+                        </div>)
+              })
+            }
+            </div>
+            <div className='build'>
+              <h2>Built with:</h2>
+              {
+                project.build.map((image) => {
+                  let path = '/images/' + image + '.png'
+                  return <img src={ path }/>
+                })
+              }
+            </div>
+          </div>
+        </div>
       </div>
       )
   }
 }
 
-function mapStateToProps(state) {
-  return {
-    page: state.displayPage,
-    projects: state.projects
-
-  }
-}
-
-export const SingleProjectContainer = connect(
-  mapStateToProps,
-  actionCreators
-  )(SingleProject)
+export default Single

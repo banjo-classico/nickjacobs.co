@@ -1,84 +1,212 @@
+html, body, div, span, applet, object, iframe, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 body {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
   font-family: sans-serif;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 
-h1 {
-  font-size: 4rem;
-}
-
-#home, #projects, #icons {
+.flexbox {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 
-#icons {
-  background-color: lightgreen;
-  justify-content: space-around;
-}
-
-#home a {
-  padding: 20px;
-  border: 2px solid black;
-  margin: 10px;
-  text-align: center;
-}
-
-#icons a{
-  color: #fff;
+h1 {
   font-size: 2rem;
-  text-shadow: 3px 3px 3px #333;
-  border: none;
+  margin-bottom: 3rem;
 }
 
-#projects a {
-  width: 45%;
-  padding: 10px;
-  border: 2px solid black;
-  margin: 10px;
-  text-align: center;
-}
-
-#pitch-in {
-  color: tomato;
-}
-
-#ww {
-  color: lightblue;
-}
-
-#eda {
-  color: gold;
-}
-
-#njco {
-  color: grey;
+.container {
+  position: relative;
 }
 
 nav {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100vw;
   height: 50px;
-  border: 2px solid black;
+  background-color: rgba(255, 255, 255, .3);
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
-ul {
+nav ul {
   list-style: none;
 }
 
 nav li {
   display: inline;
   margin: 0 10px;
-}
-
-nav a {
   color: hotpink;
 }
 
+#jumbo {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-image: url('/images/jumbo.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  text-align: left;
+  color: white;
+}
+
+#greeting {
+  padding: 30vh 10vw;
+}
+
+.pineapple-divider, .face-divider {
+  height: 33vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.pineapple-divider {
+  background-image: url('https://hd.unsplash.com/photo-1451479456262-b94f205059be');
+}
+
+.face-divider {
+  background-image: url('/images/nick-about.jpg');
+}
+
+.bottom {
+  height: 10vh;
+}
+
+#portfolio, #about, #contact {
+  padding: 5% 15%;
+  position: relative;
+}
+
+#about p {
+  width: 200px;
+  text-align: left;
+}
+
+#about img {
+  width: 25vw;
+}
+
+#portfolio {
+  min-height: 100vh;
+}
+
+
+#contact {
+  height: 60vh;
+  padding: 10%;
+  border-bottom: 1px solid hotpink;
+}
+
+#contact .iconbox {
+  padding: 10%;
+}
+
+.section-container {
+  padding: 5%;
+}
+
+.single-project {
+  width: 80%;
+  padding: 3%;
+  margin: auto;
+  text-align: left;
+  background: #dcdcdc;
+}
+
+.single-project img {
+  width: 6vw;
+}
+
+.single-project .close {
+  font-size: 3rem;
+  float: right;
+}
+
+.project-heading {
+  width: 100%;
+  border-bottom: 1px solid #999;
+}
+.project-heading button {
+  margin-bottom: 2%;
+  margin-left: 4%;
+}
+
+.singlebox {
+  margin: 4% 0;
+  width: 260px;
+  height: 20vh;
+  color: white;
+  font-size: 1rem;
+  border: none;
+}
+
+#pitch-in {
+  background: #B20F40;
+}
+
+#ww {
+  background: #CC0742;
+}
+
+#eda {
+  background: #FFEF22;
+}
+
+#njco {
+  background: #7AE1FF;
+}
+
+#contact i {
+  padding: 5%;
+  font-size: 2.5rem;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+.fa-linkedin {
+  color: #0077b5;
+}
+.fa-envelope {
+  color: #d50f25;
+}
+
+
 footer {
+  margin-top: 3%;
   text-align: center;
 }
