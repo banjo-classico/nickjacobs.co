@@ -34,6 +34,7 @@ class Home extends Component {
           <Portfolio projects={ this.props.projects } showProject={ this.props.showProject }/>
           <div className='face-divider'></div>
           <Contact />
+          <div className='mobile-photo'></div>
           <footer>Copyright 2016 - Nick Jacobs</footer>
           <div className='bottom'></div>
         </div>
