@@ -207,7 +207,7 @@ h2 {
   background-image: url('/images/nick-about.jpg');
 }
 
-/*============== MEDIA QUERY LAPTOP ======================*/
+/*==================================== MEDIA QUERY LAPTOP ==========================================*/
 
 @media screen and (min-device-width: 900px) {
 
