@@ -209,7 +209,7 @@ h2 {
 
 /*============== MEDIA QUERY LAPTOP ======================*/
 
-/*@media screen and (min-device-width: 900px) {
+@media screen and (min-device-width: 900px) {
 
   .flexbox {
     display: flex;
@@ -333,4 +333,4 @@ h2 {
     text-align: center;
   }
 
-}*/
+}
